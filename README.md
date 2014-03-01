@@ -1,9 +1,14 @@
-# VERSION HISTORY
+# activecollab-smartcard-authentication
+
+https://www.activecollab.com/
+
+
+## VERSION HISTORY
 
 2010 04 22 (latest) - Works with latest ActiveCollab, version 2
 
 
-# INSTALLATION STEPS
+## INSTALLATION STEPS
 
 - svn export https://activecollab-smartcard-autentication.googlecode.com/svn/trunk/ activecollab-smartcard-autentication
 - cp -a ./activecollab-smartcard-autentication/activecollab/`*` YOUR_ACTIVECOLLAB_INSTALLATION_DIR
@@ -27,14 +32,14 @@ SSLOptions +StdEnvVars +ExportCertData
 
 (Instead first step - creating export from svn, you can also download .zip from under Downloads and extract it.)
 
-# HOW TO ALLOW LOG IN WITH ID CARD TO USER
+## HOW TO ALLOW LOG IN WITH ID CARD TO USER
 
 - Add user
 - Mark as his Instant Messanger value his Serial from Smartcard (isikukood)
 - Voilaa
 
 
-# HOW IT WORKS
+## HOW IT WORKS
 
 It extends ActiveCollabs Basic autentication, and should be working also after upgrades etc (if application API used function will not change - most problaby it will not so much.)
 
@@ -45,12 +50,12 @@ If your value against what your would like to check is not in certificate.subjec
 I have used BasicAuthProvider etc classes, changed and extended them a bit (you may notice, that some of the used classes comments are even seen in this code) - so not much work on my part, approx 30 lines written from me to add Smartcard auth.
 
 
-# USING SMARTCARD SOLVES FOLLOWING PROBLEMS
+## USING SMARTCARD SOLVES FOLLOWING PROBLEMS
 
 - With Smartcards its much harder (if not impossible) to fake identy
 - Users do not have to remember their passwords on different infosystems
 
 
-# AUTHOR
+## AUTHOR
 
 Margus Pärt (mxrguspxrt)
